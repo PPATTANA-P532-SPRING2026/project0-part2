@@ -27,7 +27,7 @@
 
 <script>
     async function loadDucks() {
-        let host = "http://localhost:8080";
+        let host = "https://ducks-service-ppattana-iu.onrender.com";
         let response = await fetch(host + "/ducks");
         let ducks = await response.json();
         let pond = document.getElementById("pond");

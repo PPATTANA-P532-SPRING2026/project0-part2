@@ -15,7 +15,7 @@
     let ducks = [];
 
     async function getAll() {
-    let host = "http://localhost:8080";
+    let host = "https://ducks-service-ppattana-iu.onrender.com";
     let response = await fetch(host + "/ducks");
     ducks = await response.json();
     return ducks;  // ADD THIS LINE
